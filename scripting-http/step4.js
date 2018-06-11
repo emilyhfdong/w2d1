@@ -1,6 +1,6 @@
 var https = require('https');
 
-function getAndPrintHTML (options, callback) {
+function getHTML (options, callback) {
 
   https.get(options, function (response) {
     var allData = '';
@@ -30,4 +30,4 @@ var requestOptions = {
   path: '/http-examples/step4.html'
 };
 
-getAndPrintHTML(requestOptions, printHTML);
+getHTML(requestOptions, printHTML);
